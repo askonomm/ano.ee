@@ -1,0 +1,20 @@
+{
+  "site": {
+    "url": "http://localhost:8000",
+    "title": "Bien",
+    "description": "Musings on software development by Asko Nõmm",
+    "email": "asko@bien.ee",
+    "links": {
+      "github": "https://github.com/askonomm",
+      "twitter": "https://twitter.com/askonomm"
+    }
+  },
+  "data": [
+    {
+      "name": "posts",
+      "folder": "blog",
+      "sortBy": "date",
+      "order": "desc"
+    }
+  ]
+}
