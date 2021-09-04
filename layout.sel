@@ -13,8 +13,8 @@
     </div>
 
     {% if is_home %}
-        <p>Hi! I'm Asko, a full-stack Clojurian. By day I work at <a href="https://fluent.to">Fluent</a> as a senior software engineer, and by night I create <a href="{{ site.links.github }}">open source software</a>.</p>
-    {% endif %}
+        <p>Hi! I'm Asko, a full-stack Clojurian. I work at <a href="https://fluent.to">Fluent</a> as a senior software engineer, and on my free time I like to create <a href="{{ site.links.github }}">open source software</a>.</p>
+    {% endif %} 
 </div>
 
 {% if is_home %}
