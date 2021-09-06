@@ -1,5 +1,6 @@
 ---
 title: Series of PNG's and no Canvas that fits
+status: public
 date: 2021-06-06
 ---
 

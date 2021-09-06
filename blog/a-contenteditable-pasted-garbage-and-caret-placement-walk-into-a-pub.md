@@ -1,6 +1,7 @@
 ---
 title: A contentEditable, pasted garbage and caret placement walk into a pub
 date: 2021-07-22
+status: public
 popular: yes
 ---
 

@@ -160,6 +160,7 @@ pre {
 canvas {
     width: calc(100vw - 700px) !important;
     height: 100vh !important;
+    background: #f5f5f5 !important;
     position: fixed;
     top: 0;
     right: 0;

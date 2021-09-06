@@ -23,6 +23,7 @@
 
     <div class="posts">
         {% for post in data.posts %}
+            {% if post.meta.status = "public" %}
             <div class="item">
                 {% if post.meta.popular %}
                 <div class="popular">★</div>
@@ -36,6 +37,7 @@
                     {% endif %}
                 </div>
             </div>
+            {% endif %}
         {% endfor %}
     </div>
 
@@ -44,7 +46,7 @@
     <p>
         You can find me on <a href="{{ site.links.twitter }}">Twitter</a> and via e-mail <a href="{{ site.email }}">{{ site.email }}</a>
         for all the long-form prose.
-        If you'd like to have a beer and talk shop feel free get in touch. I'm currently in Buenos Aires, Argentina and always down for a beer.
+        If you'd like to talk shop feel free get in touch. I'm currently in Buenos Aires, Argentina and always down for a beer.
     </p> 
 
 {% else %}

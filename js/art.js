@@ -12,6 +12,10 @@ function draw() {
     branchComponent(115, random(2, 15), random(10, 60));
 }
 
+window.addEventListener('resize', () => {
+    resizeCanvas(window.innerWidth - 700, window.innerHeight);
+});
+
 function branch(len, angle, gen) {
     line(0, 0, 0, -len);
     translate(0, -len);
@@ -32,7 +36,7 @@ function branch(len, angle, gen) {
 }
 
 function branchComponent(len, amount, angle) {
-    stroke.apply(null, [255, 72, 72]);
+    stroke.apply(null, [111, 105, 172]);
     var increment = 360/amount;
     var rotAmount;
 

@@ -1,5 +1,6 @@
 ---
 title: Writing Node.js applications in Clojure and using NPM packages
+status: public
 date: 2021-06-26
 ---
 
