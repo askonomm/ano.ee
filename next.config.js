@@ -1,0 +1,26 @@
+module.exports = {
+    async redirects() {
+        return [
+            {
+                source: '/a-contenteditable-pasted-garbage-and-caret-placement-walk-into-a-pub/',
+                destination: '/blog/a-contenteditable-pasted-garbage-and-caret-placement-walk-into-a-pub',
+                permanent: true,
+            },
+            {
+                source: '/writing-nodejs-applications-in-clojure-using-npm-packages/',
+                destination: '/blog/writing-nodejs-applications-in-clojure-using-npm-packages',
+                permanent: true,
+            },
+            {
+                source: '/image-decoding-differences-between-browsers/',
+                destination: '/blog/browsers-decode-images-differently',
+                permanent: true,
+            },
+            {
+                source: '/series-of-pngs-and-no-canvas-that-fits/',
+                destination: '/blog/series-of-pngs-and-no-canvas-that-fits',
+                permanent: true,
+            },
+        ]
+    },
+}
