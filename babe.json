@@ -1,8 +1,7 @@
 {
   "site": {
-    "url": "http://localhost:8000",
+    "url": "https://bien.ee",
     "title": "Bien",
-    "description": "Musings on software development by Asko Nõmm",
     "email": "asko@bien.ee",
     "links": {
       "github": "https://github.com/askonomm",

@@ -1,6 +1,7 @@
 ---
 title: Data oriented static site generator?!
-date: 2021-09-10
+date: 2021-09-07
+status: public
 ---
 
 Some time ago I wrote a static site generator called [Lava](https://github.com/askonomm/lava). Lava is a pretty common static site generator implementation I wrote in Java that takes in a bunch of Markdown files with YAML metadata and spits out HTML. The only thing "special" it has, that I thought was cool to implement, was that you could also create Handlebars templates as content files next to Markdown files, allowing you to be pretty creative and implement things like sitemaps and RSS feeds yourself, using the data available in the Handlebars templates which are all the content and so forth.
