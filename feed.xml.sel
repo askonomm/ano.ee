@@ -16,7 +16,7 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
         <description>Writings about software development by Asko Nõmm</description>
         <lastBuildDate>Mon, 30 Aug 2021 22:09:50 +0000</lastBuildDate>
         <language>en-US</language>
-        {% for post in posts %}
+        {% for post in data.posts %}
             <item>
                 <title>{{ post.title }}</title>
                 <link>{{ site.url }}/{{ post.path }}</link>
