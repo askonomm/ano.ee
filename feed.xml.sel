@@ -14,13 +14,15 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
         <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
         <link>{{ site.url }}</link>
         <description>Writings about software development by Asko Nõmm</description>
-        <lastBuildDate>Mon, 30 Aug 2021 22:09:50 +0000</lastBuildDate>
         <language>en-US</language>
         {% for post in data.posts %}
+            {% if forloop.first %}
+            <lastBuildDate>{{ post.meta.date }}</lastBuildDate>
+            {% endif %}
             <item>
-                <title>{{ post.title }}</title>
+                <title>{{ post.meta.title }}</title>
                 <link>{{ site.url }}/{{ post.path }}</link>
-                <pubDate>{{ post.date }}</pubDate>
+                <pubDate>{{ post.meta.date }}</pubDate>
                 <content:encoded><![CDATA[{{ post.entry }}]]></content:encoded>
             </item>
         {% endfor %}
