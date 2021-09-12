@@ -17,13 +17,13 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
         <language>en-US</language>
         {% for post in data.posts %}
             {% if forloop.first %}
-            <lastBuildDate>{{ post.meta.date|date:"EEE, dd MMM yyyy HH:mm:ss" }} UTC</lastBuildDate>
+            <lastBuildDate>{{ post.meta.date|date:"EEE, dd MMM yyyy HH:mm:ss" }} +0000</lastBuildDate>
             {% endif %}
-            
+
             <item>
                 <title>{{ post.meta.title }}</title>
                 <link>{{ site.url }}/{{ post.path }}</link>
-                <pubDate>{{ post.meta.date|date:"EEE, dd MMM yyyy HH:mm:ss" }} UTC</pubDate>
+                <pubDate>{{ post.meta.date|date:"EEE, dd MMM yyyy HH:mm:ss" }} +0000</pubDate>
                 <description>{{ post.meta.description }}</description>
                 <content:encoded><![CDATA[{{ post.entry }}]]></content:encoded>
                 <guid>{{ site.url }}/{{ post.path }}</guid>
