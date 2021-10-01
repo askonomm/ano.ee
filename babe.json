@@ -1,6 +1,6 @@
 {
   "site": {
-    "url": "http://localhost:8000",
+    "url": "https://bien.ee",
     "title": "Bien",
     "email": "asko@bien.ee",
     "links": {
