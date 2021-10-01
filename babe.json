@@ -1,6 +1,6 @@
 {
   "site": {
-    "url": "https://bien.ee",
+    "url": "http://localhost:8000",
     "title": "Bien",
     "email": "asko@bien.ee",
     "links": {
@@ -8,12 +8,11 @@
       "twitter": "https://twitter.com/askonomm"
     }
   },
-  "data": [
-    {
-      "name": "posts",
-      "folder": "blog",
+  "data": {
+    "posts": {
+      "content": "blog",
       "sortBy": "date",
       "order": "desc"
     }
-  ]
+  }
 }

@@ -20,6 +20,13 @@ body {
     margin-bottom: 50px;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #111;
+    }
+}
+
 @media all and (max-width: 700px) {
     body {
         width: 100%;
@@ -33,6 +40,12 @@ em, i {
     color: #777;
 }
 
+@media (prefers-color-scheme: dark) {
+    em, i {
+        color: #444;
+    }
+}
+
 iframe {
     width: 100%;
     height: 325px;
@@ -43,6 +56,12 @@ h1, h2, h3 {
     color: #111;
     line-height: 1.35;
     letter-spacing: -0.05rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3 {
+        color: #fff;
+    }
 }
 
 h2, h3 {
@@ -73,6 +92,12 @@ h3 {
     color: #777;
 }
 
+@media (prefers-color-scheme: dark) {
+    h3 {
+        color: #444;
+    }
+}
+
 @media all and (max-width: 700px) {
     h3 {
         font-size: 16px;
@@ -87,6 +112,12 @@ h3 {
     letter-spacing: 3px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .artsy-title {
+        color: #777;
+    }
+}
+
 @media all and (max-width: 700px) {
     .artsy-title {
         font-size: 12px;
@@ -98,6 +129,12 @@ hr {
     border-top: 1px solid #e5e5e5;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        border-top: 1px solid #272727;
+    }
 }
 
 ul {
@@ -140,6 +177,13 @@ code {
     top: -1px;
 }
 
+@media (prefers-color-scheme: dark) {
+    code {
+        color: #aeabd0;
+        border: 1px solid #333;
+    }
+}
+
 pre code {
     border: 0;
     padding: 0;
@@ -157,6 +201,12 @@ pre {
     margin-bottom: 25px;
 }
 
+@media (prefers-color-scheme: dark) {
+    pre {
+        background: #222;
+    }
+}
+
 canvas {
     width: calc(100vw - 700px) !important;
     height: 100vh !important;
@@ -166,6 +216,12 @@ canvas {
     right: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+    canvas {
+        background: #171717 !important;
+    }
+}
+
 @media all and (max-width: 850px) {
     canvas {
         display: none !important;
@@ -173,12 +229,21 @@ canvas {
 }
 
 .header {
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 75px auto;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 
 @media all and (max-width: 700px) {
     .header {
+        display: block;
+        margin-top: 0;
+    }
+
+    .header.is-home {
+        background: transparent;
+        padding: 0;
         margin-top: 0;
     }
 }
@@ -192,6 +257,17 @@ canvas {
     background-size: cover;
     background-position: center;
     border-radius: 100%;
+    transform: rotate(-10deg);
+    margin-left: -20px;
+}
+
+@media all and (max-width: 700px) {
+    .header .logo {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-left: -10px;
+    }
 }
 
 .header .logo a {
@@ -206,9 +282,40 @@ canvas {
     border-radius: 100%;
 }
 
+@media all and (max-width: 700px) {
+    .header .logo a {
+        font-size: 16px;
+    }
+}
+
 .header .logo a:hover {
     color: #fff;
     background: rgba(255, 72, 72, .75);
+}
+
+.header p {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin: 13px 0 0;
+}
+
+@media all and (max-width: 700px) {
+    .header p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .header p:after {
+        display: block;
+        content: '';
+        width: 100px;
+        height: 3px;
+        background: #e5e5e5;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
 }
 
 .post .title {
@@ -226,10 +333,16 @@ canvas {
 }
 
 .post .meta {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;
     color: #999;
     margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .post .meta {
+        color: #666;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -255,6 +368,12 @@ canvas {
     left: -25px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .posts .item .popular {
+        color: #444;
+    }
+}
+
 @media all and (max-width: 700px) {
     .posts .item .popular {
         font-size: 15px;
@@ -278,9 +397,15 @@ canvas {
 }
 
 .posts .item .meta {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;
     color: #999;
+}
+
+@media (prefers-color-scheme: dark) {
+    .posts .item .meta {
+        color: #666;
+    }
 }
 
 @media all and (max-width: 700px) {

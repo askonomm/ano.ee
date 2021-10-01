@@ -1,6 +1,9 @@
 function setup() {
     createCanvas(window.innerWidth - 700, window.innerHeight);
     background.apply(null, [245, 245, 245]);
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        background.apply(null, [23, 23, 23])
+    }
     noLoop();
     stroke(255);
     angleMode(DEGREES);
@@ -37,6 +40,9 @@ function branch(len, angle, gen) {
 
 function branchComponent(len, amount, angle) {
     stroke.apply(null, [111, 105, 172]);
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        stroke.apply(null, [174, 171, 208])
+    }
     var increment = 360/amount;
     var rotAmount;
 
