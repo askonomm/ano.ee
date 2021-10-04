@@ -1,5 +1,5 @@
 ---
-title: Ruuter; a tiny, zero-dependency HTTP router
+title: Ruuter: a tiny, zero-dependency HTTP router
 date: 2021-10-03
 status: public
 ---
