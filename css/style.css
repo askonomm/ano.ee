@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,600;0,800;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('code.css');
- 
+
+:root {
+    --red: #FF4848;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --red: #ff6a6a;
+    }
+}
+
 * {
     box-sizing: border-box;
     position: relative;
@@ -152,14 +162,14 @@ ul > li:last-child {
 }
 
 a {
-    color: #FF4848;
+    color: var(--red);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     padding-bottom: 1px;
 }
 
 a:hover {
-    border-bottom: 1px solid #FF4848;
+    border-bottom: 1px solid var(--red);
 }
 
 p {
