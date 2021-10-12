@@ -42,7 +42,7 @@ em, i {
 
 @media (prefers-color-scheme: dark) {
     em, i {
-        color: #444;
+        color: #999;
     }
 }
 
