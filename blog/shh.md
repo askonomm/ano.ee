@@ -4,7 +4,7 @@ date: 2021-10-14
 status: public
 ---
 
-I think using a password manager is pretty important these days. But, while [Bitwarden](https://www.google.com/search?client=safari&rls=en&q=bitwarden&ie=UTF-8&oe=UTF-8) and [RememBear](https://www.remembear.com) get big recommendations from me, for my own use case I really wanted something simple and quick, even if it comes at a cost of some security. Which brings me to [Shh, a CLI password manager](https://github.com/askonomm/shh) I created. In Clojure, of course. But runs on Linux and Mac OS via a native binary!
+I think using a password manager is pretty important these days. But, while [Bitwarden](https://www.google.com/search?client=safari&rls=en&q=bitwarden&ie=UTF-8&oe=UTF-8) and [RememBear](https://www.remembear.com) get big recommendations from me, for my own use case I really wanted something simple and quick, even if it comes at a cost of some security. Which brings me to [Shh, a CLI password manager](https://github.com/askonomm/shh) I created. In Clojure, of course. But runs on Linux and Mac OS via a native binary! It's very fast, copies passwords straight to clipboard, and is meant to be used by someone who always has a CLI open, like me.
 
 
 What did I mean by "at a cost of some security"? Well, currently, the datastore is a EDN file in your home directory and contains all the info as-is, unencrypted. This means that the passwords are as safe as your computer is (which hopefully is secure?). But, encrypting of the data-store isn't a priority for me right now so feel free to make a pull request if you want it quick. 
