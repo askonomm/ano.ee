@@ -21,10 +21,32 @@
 
 {% if is_home %}
 
-    <h2 class="artsy-title">Blog</h2>
+    <h2 class="artsy-title">Recent</h2>
 
     <div class="posts">
-        {% for post in data.posts %}
+        {% for post in data.posts|take:3 %}
+            {% if post.meta.status = "public" %}
+            <div class="item">
+                {% if post.meta.popular %}
+                <div class="popular">★</div>
+                {% endif %}
+
+                <h3 class="title"><a href="{{ site.url }}/{{ post.path }}">{{ post.meta.title }}</a></h3>
+                <div class="meta">
+                    {{ post.meta.date|date:"d MMM, YYYY" }}
+                    {% if post.meta.popular %}
+                        &bull; Popular
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2 class="artsy-title">Not-so-recent</h2>
+
+    <div class="posts older-posts">
+        {% for post in data.posts|drop:3 %}
             {% if post.meta.status = "public" %}
             <div class="item">
                 {% if post.meta.popular %}
