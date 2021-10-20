@@ -6,6 +6,7 @@
     <title>{% if content.meta.title %}{{ content.meta.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.url }}/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ site.url }}/feed.xml" />
+    <script defer data-domain="bien.ee" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 
