@@ -189,7 +189,7 @@ code {
 
 @media (prefers-color-scheme: dark) {
     code {
-        color: #aeabd0;
+        color: #d0ceeb;
         border: 1px solid #333;
     }
 }
@@ -205,7 +205,7 @@ pre {
     line-height: 1.35;
     max-height: 400px;
     background: #fbfbfb;
-    border: 1px solid #ddd;
+    border: 1px solid var(--accent);
     box-shadow: 0px 1.4px 6.3px rgba(0, 0, 0, 0.006),
                 0px 3.5px 15.2px rgba(0, 0, 0, 0.008),
                 0px 6.5px 28.7px rgba(0, 0, 0, 0.01),
@@ -229,7 +229,6 @@ pre {
                 0px 11.6px 51.2px rgba(0, 0, 0, 0.042),
                 0px 21.7px 95.7px rgba(0, 0, 0, 0.05),
                 0px 52px 229px rgba(0, 0, 0, 0.07);
-        border: 1px solid rgba(0,0,0,.35);
     }
 }
 
@@ -312,7 +311,7 @@ strong {
     font-size: 30px;
     font-weight: 900;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: -10px;
 }
 
 @media all and (max-width: 700px) {
