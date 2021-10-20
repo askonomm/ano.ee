@@ -20,10 +20,9 @@
 }
 
 body {
-    width: 625px;
+    width: 600px;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 16px;
     line-height: 2.2;
     color: #272727;
     letter-spacing: -0.005rem;
@@ -112,7 +111,7 @@ h3 {
 }
 
 .artsy-title {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
     color: #999;
@@ -310,7 +309,7 @@ strong {
 
 .post .title {
     width: 85%;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
@@ -318,7 +317,7 @@ strong {
 
 @media all and (max-width: 700px) {
     .post .title {
-        font-size: 29px;
+        font-size: 26px;
     }
 }
 
