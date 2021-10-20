@@ -31,3 +31,5 @@ Now, obviously I need to get a VM closer to where I am. But, UpCloud has no Sout
 ## Conclusion
 
 Turns out that in 2021 you don't really need an all-powerful machine for programming work anymore, as long as you get a remote server close to where you are and manage to solve the IDE issue for yourself. I managed to solve it for myself using VS Code, and at a price of around ~$80 per month (at ~10h of use per day), making it out to be around ~$960 per year, for a 4 vCPU and 16gb RAM VM, which I can scale however I want depending on my need. And since I only pay for actual usage, and I'm pretty sure I won't be coding 10 hours per day, every day, for a whole year, I'm expecting the final price to be considerably lower than that.
+
+Another cool thing that came from this is that now whenever I do actually buy a new computer, I no longer have to spend a day or two setting it all up. I just download VS Code and set-up SSH keys, and done. And when I'm traveling I can just change the EC2 region closest to wherever I happen to be at that time.
