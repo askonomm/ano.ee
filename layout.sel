@@ -13,10 +13,6 @@
     <div class="logo">
         <a href="{{ site.url }}">Bien.</a>
     </div>
-
-    {% if is_home %}
-        <p>Hi! I'm Asko, a full-stack Clojurian. I work at <a href="https://fluent.to">Fluent</a> as a senior software engineer, and on my free time I like to create <a href="{{ site.links.github }}">open source software</a>.</p>
-    {% endif %} 
 </div>
 
 {% if is_home %}
@@ -65,7 +61,12 @@
         {% endfor %}
     </div>
 
-    <h2 class="artsy-title">Elsewhere</h2>
+    <h2 class="artsy-title">About</h2>
+
+    <p>
+        I'm Asko, a full-stack Clojurian. I work at <a href="https://fluent.to">Fluent</a> as a senior software engineer, and on my 
+        free time I like to create <a href="{{ site.links.github }}">open source software</a>.
+    </p>
 
     <p>
         You can find me on <a href="{{ site.links.twitter }}">Twitter</a> and via e-mail <a href="{{ site.email }}">{{ site.email }}</a>
@@ -83,8 +84,6 @@
 
 {% endif %}
 
-<script type="text/javascript" src="{{ site.url }}/js/p5.js"></script>
-<script src="{{ site.url }}/js/art.js"></script>
 {% if not is_home %}
     <script src="{{ site.url }}/js/highlight.js"></script>
 {% endif %}
