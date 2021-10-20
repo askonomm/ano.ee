@@ -18,11 +18,6 @@ hue-6:   #986801
 hue-6-2: #c18401
 
 */
-
-.hljs {
-    color: #383a42;
-    background: #fafafa;
-  }
   
   .hljs-comment,
   .hljs-quote {
@@ -115,11 +110,6 @@ hue-6:   #d19a66
 hue-6-2: #e6c07b
 
 */
-
-.hljs {
-    color: #abb2bf;
-    background: #282c34;
-  }
   
   .hljs-comment,
   .hljs-quote {
