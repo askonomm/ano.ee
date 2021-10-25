@@ -421,3 +421,26 @@ strong {
         font-size: 12px;
     }
 }
+
+.footer {
+    font-size: 12px;
+    font-weight: 300;
+    color: #999;
+    margin-top: 75px;
+}
+
+.footer a {
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        color: rgba(255,255,255,.75);
+    }
+
+    .footer a {
+        color: rgba(255,255,255,.9);
+        border-bottom: 1px solid rgba(255,255,255,.25);
+    }
+}

@@ -85,6 +85,11 @@
 
 {% endif %}
 
+<div class="footer">
+    &copy; {% now YYYY %} bien.ee. All rights reserved. <br>
+    This site is <a href="https://github.com/askonomm/bien.ee">open source</a>, feel free to make a PR when you find a typo.
+</div>
+
 {% if not is_home %}
     <script src="{{ site.url }}/js/highlight.js"></script>
 {% endif %}
