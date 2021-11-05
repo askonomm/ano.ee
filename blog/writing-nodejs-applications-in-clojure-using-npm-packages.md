@@ -72,7 +72,7 @@ Do you see how simple that is?!? Every NPM package needs to be imported using qu
       consult the express documentation that you can find 
       from https://expressjs.com/en/guide/routing.html."
       [^js app]
-      (.get app "/" (fn [req res] (.send res "Hi there!"))
+      (.get app "/" (fn [req res] (.send res "Hi there!"))))
     
     (defn start-server 
       "Configures the use of sessions as well as routes and 
