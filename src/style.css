@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+
+/** RESET */
+* {
+    font-size: 13px !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/** GENERAL */
+:root {
+    --accent: #f94144;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace !important;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #333;
+    letter-spacing: 0.1px;
+    width: 500px;
+    margin: 100px;
+}
+
+@media all and (max-width: 750px) {
+    body {
+        width: calc(100% - 50px);
+        margin: 25px;
+    }
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.25;
+    color: #111;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+h2 code {
+    position: relative;
+    top: -2px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    background: var(--accent);
+}
+
+strong {
+    font-weight: 500;
+    color: #272727;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 25px;
+}
+
+code {
+    font-family: "Fira Code", monospace;
+    color: #111;
+    background: #f7f7f7;
+    padding: 3px 6px 3px 6px;
+}
+
+pre {
+    width: calc(100% + 50px);
+    max-height: 375px;
+    background: #f7f7f7;
+    padding: 25px;
+    margin-top: 25px;
+    margin-left: -25px;
+    margin-bottom: 25px;
+    overflow: auto;
+}
+
+@media all and (max-width: 800px) {
+    pre {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+    }
+}
+
+pre code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+a.btn {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    background: var(--accent);
+    border-radius: 25px;
+    padding: 6px 16px 6px 16px;
+}
+
+/** HEADER */
+.header {
+}
+
+.header .site-title a {
+    font-size: 11px !important;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.header .site-title a:hover {
+    color: #bbb;
+    background: transparent;
+}
+
+/** HOME */
+.year {
+}
+
+.year h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #111;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/** MIN POST */
+.year .post {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.year .post .post-title {
+    font-size: 13px;
+    line-height: 1.5;
+    flex-grow: 1;
+    padding-right: 50px;
+    margin: 0;
+}
+
+.year .post .post-title a {
+    border: 0;
+}
+
+.year .post .post-meta {
+    font-size: 11px !important;
+    color: #999;
+    white-space: nowrap;
+    position: relative;
+    top: -2px;
+}
+
+/** POST */
+.content:not(.home) .post-title {
+    width: 75%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.content:not(.home) .post-title a {
+    font-weight: 800;
+    font-size: 17px !important;
+    color: #111;
+}
+
+.content:not(.home) .post-title a:hover {
+    background: #eee;
+}
+
+.content:not(.home) .post-meta {
+    font-size: 11px !important;
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.post-entry ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.post-entry ul li {
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.post-entry ul li:last-child {
+    margin-bottom: 0;
+}
+
+.post-entry h2 {
+    font-size: 14px !important;
+}
+
+/** CODE */
+.hljs-keyword {
+    color: #ff595e;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-attr {
+    color: #1982c4;
+}
+
+.hljs-symbol {
+    color: #07ac80;
+}
+
+.hljs-string {
+    color: #c0a737;
+}
+
+.hljs-comment {
+    opacity: 0.35;
+}
+
+/** FOOTER */
+.footer {
+    color: #777;
+    margin-top: 100px;
+}
+
+.footer * {
+    font-size: 12px !important;
+}
+
+.footer:before {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 0;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 25px;
+}

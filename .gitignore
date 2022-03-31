@@ -1,0 +1,6 @@
+.idea/
+.clj-kondo/
+.lsp/
+target/
+public/
+.DS_Store
