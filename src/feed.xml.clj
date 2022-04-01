@@ -1,4 +1,3 @@
-(declare xml)
 (declare format-date)
 (declare content)
 
