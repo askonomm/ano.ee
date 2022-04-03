@@ -23,6 +23,13 @@ body {
     margin: 100px;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #17191E;
+    }
+}
+
 @media all and (max-width: 750px) {
     body {
         width: calc(100% - 50px);
@@ -36,6 +43,12 @@ h2 {
     color: #111;
     margin-top: 60px;
     margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+    h2 {
+        color: #fff;
+    }
 }
 
 h2 code {
@@ -64,8 +77,14 @@ p {
 
 hr {
     border: 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #1F242F;
     margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        border-bottom: 1px solid #252C3E;
+    }
 }
 
 code {
@@ -73,6 +92,13 @@ code {
     color: #111;
     background: #f7f7f7;
     padding: 3px 6px 3px 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+    code {
+        color: #fff;
+        background: #1F242F;
+    }
 }
 
 pre {
@@ -84,6 +110,13 @@ pre {
     margin-left: -25px;
     margin-bottom: 25px;
     overflow: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    pre {
+        color: #fff;
+        background: #1F242F;
+    }
 }
 
 @media all and (max-width: 800px) {
@@ -111,9 +144,6 @@ a.btn {
 }
 
 /** HEADER */
-.header {
-}
-
 .header .site-title a {
     font-size: 11px !important;
     font-weight: 400;
@@ -122,9 +152,21 @@ a.btn {
     color: #bbb;
 }
 
+@media (prefers-color-scheme: dark) {
+    .header .site-title a {
+        color: #fff;
+    }
+}
+
 .header .site-title a:hover {
     color: #bbb;
     background: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header .site-title a:hover {
+        color: #fff;
+    }
 }
 
 /** HOME */
@@ -137,6 +179,12 @@ a.btn {
     color: #111;
     margin-top: 50px;
     margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .year h3 {
+        color: #999;
+    }
 }
 
 /** MIN POST */
@@ -178,8 +226,20 @@ a.btn {
     color: #111;
 }
 
+@media (prefers-color-scheme: dark) {
+    .content:not(.home) .post-title a {
+        color: #fff;
+    }
+}
+
 .content:not(.home) .post-title a:hover {
     background: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+    .content:not(.home) .post-title a:hover {
+        background: #1F242F;
+    }
 }
 
 .content:not(.home) .post-meta {
@@ -235,6 +295,12 @@ a.btn {
     margin-top: 100px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .footer {
+        color: #eee;
+    }
+}
+
 .footer * {
     font-size: 12px !important;
 }
@@ -246,4 +312,10 @@ a.btn {
     height: 0;
     border-top: 1px solid #e5e5e5;
     margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer:before {
+        border-top: 1px solid rgba(255,255,255,.25);
+    }
 }
