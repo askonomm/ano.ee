@@ -220,6 +220,10 @@ a.btn {
     margin-bottom: 10px;
 }
 
+.content:not(.home) .page .post-title {
+    margin-bottom: 50px;
+}
+
 .content:not(.home) .post-title a {
     font-weight: 800;
     font-size: 17px !important;
