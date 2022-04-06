@@ -197,8 +197,14 @@ a.btn {
     font-size: 13px;
     line-height: 1.5;
     flex-grow: 1;
-    padding-right: 50px;
+    padding-right: 70px;
     margin: 0;
+}
+
+@media all and (max-width: 750px) {
+    .year .post .post-title {
+        padding-right: 50px;
+    }
 }
 
 .year .post .post-title a {
