@@ -9,8 +9,9 @@
   "Date is in year-month-day format, so we don't have
   to do anything fancy here, splitting works just fine."
   [date]
-  (-> (string/split date #"-")
-      first))
+  (when date
+    (-> (string/split date #"-")
+        first)))
 
 
 ; Get all blog posts grouped by year.

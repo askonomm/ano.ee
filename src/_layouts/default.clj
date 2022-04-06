@@ -9,8 +9,9 @@
   [:div.content
    [:div.post
     [:h2.post-title
-     [:a {:href (:slug post)} (:title post)]]
-    [:div.post-meta (format-date (:date post) "MMM dd, YYYY")]
+     [:a {:href (str "/" (:slug post))} (:title post)]]
+    (when (:date post)
+      [:div.post-meta (format-date (:date post) "MMM dd, YYYY")])
     [:div.post-entry (:entry post)]]])
 
 
