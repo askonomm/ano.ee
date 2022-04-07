@@ -67,8 +67,14 @@ a:hover {
 }
 
 strong {
-    font-weight: 500;
+    font-weight: 600;
     color: #272727;
+}
+
+@media (prefers-color-scheme: dark) {
+    strong {
+        color: #fff;
+    }
 }
 
 p {
@@ -115,7 +121,7 @@ pre {
 @media (prefers-color-scheme: dark) {
     pre {
         color: #fff;
-        background: #1F242F;
+        background: rgba(255,255,255,.05);
     }
 }
 
@@ -232,7 +238,7 @@ a.btn {
 
 .content:not(.home) .post-title a {
     font-weight: 800;
-    font-size: 17px !important;
+    font-size: 15px !important;
     color: #111;
 }
 
@@ -273,7 +279,7 @@ a.btn {
 }
 
 .post-entry h2 {
-    font-size: 14px !important;
+    font-size: 13px !important;
 }
 
 /** CODE */
