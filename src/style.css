@@ -26,7 +26,7 @@ body {
 @media (prefers-color-scheme: dark) {
     body {
         color: #eee;
-        background: #17191E;
+        background: #17191e;
     }
 }
 
@@ -82,14 +82,24 @@ p {
 }
 
 hr {
+    width: calc(100% + 50px);
     border: 0;
-    border-bottom: 1px solid #1F242F;
-    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 50px;
+    margin-left: -25px;
+    margin-bottom: 50px;
 }
 
 @media (prefers-color-scheme: dark) {
     hr {
-        border-bottom: 1px solid #252C3E;
+        border-bottom: 1px solid #252c3e;
+    }
+}
+
+@media all and (max-width: 750px) {
+    hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
@@ -103,7 +113,7 @@ code {
 @media (prefers-color-scheme: dark) {
     code {
         color: #fff;
-        background: #1F242F;
+        background: #1f242f;
     }
 }
 
@@ -121,7 +131,7 @@ pre {
 @media (prefers-color-scheme: dark) {
     pre {
         color: #fff;
-        background: rgba(255,255,255,.05);
+        background: rgba(255, 255, 255, 0.05);
     }
 }
 
@@ -254,7 +264,7 @@ a.btn {
 
 @media (prefers-color-scheme: dark) {
     .content:not(.home) .post-title a:hover {
-        background: #1F242F;
+        background: #1f242f;
     }
 }
 
@@ -311,6 +321,21 @@ a.btn {
     margin-top: 100px;
 }
 
+@media all and (max-width: 750px) {
+    .footer {
+        width: calc(100% + 50px);
+        background: #fefefe;
+        border-top: 1px solid #eee;
+        padding: 25px;
+        margin-left: -25px;
+        margin-bottom: -25px;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .footer {
         color: #eee;
@@ -323,15 +348,21 @@ a.btn {
 
 .footer:before {
     display: block;
-    content: '';
+    content: "";
     width: 50px;
     height: 0;
     border-top: 1px solid #e5e5e5;
     margin-bottom: 25px;
 }
 
+@media all and (max-width: 750px) {
+    .footer:before {
+        display: none;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .footer:before {
-        border-top: 1px solid rgba(255,255,255,.25);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 }
