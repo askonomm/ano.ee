@@ -27,7 +27,7 @@ Before I can assemble anything, I need to get all the parts, and this is the lis
 
 - [ ] [Processor](https://www.amazon.com/AMD-Ryzen-5950X-32-Thread-Processor/dp/B0815Y8J9N/ref=psdc_229189_t2_B08164VTWH) (544€)
 
-Total cost: **€2409**. A 128GB memory (max that this motherboard supports), 16 core processor, 8GB video machine for the price of a MacBook. Not bad. And I can upgrade all the parts however I wish should I have the need to do so.
+Total cost: **€2409**. A 128GB memory (max that this motherboard supports), 16 core processor, 8GB video machine for the price of a MacBook. Not bad. And I can upgrade all the parts however I wish, should I have the need to do so.
 
 ---
 
