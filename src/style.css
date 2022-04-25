@@ -1,4 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+/** FONTS */
+/* ibm-plex-mono-regular - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-regular.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-regular.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-regular.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-regular.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-regular.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-regular.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-mono-italic - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-italic.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-italic.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-italic.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-italic.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-italic.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-italic.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-mono-500 - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-500.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-500.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/ibm-plex-mono-v11-latin-ext_latin-500.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-mono-500italic - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: italic;
+    font-weight: 500;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-500italic.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-500italic.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500italic.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500italic.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500italic.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-500italic.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-mono-600 - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-600.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-600.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/ibm-plex-mono-v11-latin-ext_latin-600.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-mono-600italic - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: italic;
+    font-weight: 600;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-600italic.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-600italic.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600italic.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600italic.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600italic.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-600italic.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-mono-700 - latin-ext_latin */
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ibm-plex-mono-v11-latin-ext_latin-700.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("fonts/ibm-plex-mono-v11-latin-ext_latin-700.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/ibm-plex-mono-v11-latin-ext_latin-700.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-700.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-700.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("fonts/ibm-plex-mono-v11-latin-ext_latin-700.svg#IBMPlexMono")
+            format("svg"); /* Legacy iOS */
+}
 
 /** RESET */
 * {
@@ -18,13 +169,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #FF8A5B;
-    --keyword: #EA526F;
-    --name: #01BAEF;
-    --symbol: #86CB92; 
-    --string: #FFD639;
-  }
+    :root {
+        --accent: #ff8a5b;
+        --keyword: #ea526f;
+        --name: #01baef;
+        --symbol: #86cb92;
+        --string: #ffd639;
+    }
 }
 
 body {
@@ -148,18 +299,18 @@ pre {
 @media (prefers-color-scheme: dark) {
     pre {
         color: #e5e5e5;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,.1);
-	border-radius: 10px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
     }
 }
 
 @media all and (max-width: 800px) {
     pre {
         width: calc(100% + 50px);
-	border-left: 0;
-	border-right: 0;
-	border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
         margin-left: -25px;
     }
 }
@@ -168,6 +319,17 @@ pre code {
     background: transparent;
     border: 0;
     padding: 0;
+}
+
+blockquote {
+    border-left: 1px solid #e5e5e5;
+    padding-left: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    blockquote {
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
 }
 
 a.btn {
@@ -365,7 +527,7 @@ a.btn {
 }
 
 @media (prefers-color-scheme: dark) {
-  .footer:before {
-    border-top: 1px solid rgba(255,255,255,.25);
-  }
+    .footer:before {
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
 }

@@ -78,7 +78,7 @@ And so our final `empty-line-above?` corrector would be:
 	       ""))))
 ```
 
-[There's a bit more to the corrector of a ATX heading block](https://github.com/askonomm/clarktown/blob/master/src/clarktown/correctors/atx_heading_block.clj), such as the `empty-line-below?` function as well as detecting if we're in a code block, because we do not want to correct anything inside of a code block, but this here is the gist of it.
+> [There's a bit more to the corrector of a ATX heading block](https://github.com/askonomm/clarktown/blob/master/src/clarktown/correctors/atx_heading_block.clj), such as the `empty-line-below?` function as well as detecting if we're in a code block, because we do not want to correct anything inside of a code block, but this here is the gist of it.
 
 ## Bundling the correctors
 
