@@ -35,7 +35,7 @@ Now while I personally do not write Markdown like that and nicely always add two
 
 ## The solution
 
-Solution to this problem is to create correctors. Essentially we'll be splitting the entire Markdown input into a vector of lines, and going over each line. Then we run the correctors over each of those lines and they will determine if a fix is needed or not. Should there be a `\newline` above or bottom of the current line? Perhaps both? A corrector will answer these questions.
+Solution to this problem is to create correctors. Essentially we'll be splitting the entire Markdown input into a vector of lines, and going over each line. Then we run the correctors over each of those lines and they will determine if a fix is needed or not. Should there be a `\newline` above or below of the current line? Perhaps both? A corrector will answer these questions.
 
 The type of heading block that starts with a hashbang is called an ATX heading block, so let's create a function that determines whether we should have an extra `\newline` on top of the block by feeding it all the lines, the current line, and the current index, like this:
 
@@ -86,8 +86,8 @@ Once we have a bunch of correctors, we don't want to manually integrate them, so
 
 ```clojure
 (def block-separation-correctors
-  {:empty-line-above? [...]
-   :empty-line-below? [...])
+  {:newline-above [...]
+   :newline-below [...])
 ```
 
 The vectors of each will include references to functions like the one we created above (the `empty-line-above?` function).
@@ -96,8 +96,8 @@ And we'll use these by running them over each line in our inputted Markdown, lik
 
 ```clojure
 (let [lines (clojure.string/split-lines "our markdown goes here")
-      above-correctors (:empty-line-above? block-separation-correctors)
-      below-correctors (:empty-line-below? block-separation-correctors)]
+      above-correctors (:newline-above block-separation-correctors)
+      below-correctors (:newline-below block-separation-correctors)]
   (->> lines
        (map-indexed
 	 (fn [index line]
