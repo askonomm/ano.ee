@@ -47,7 +47,7 @@ The type of heading block that starts with a hashbang is called an ATX heading b
 First let's make sure that this line is indeed a ATX heading block line:
 
 ```clojure
-(clojure.string/starts-with? "#")
+(clojure.string/starts-with? line "#")
 ```
 
 Then let's make sure that this is not the very first line, because if it is then there's no need to add anything above.
