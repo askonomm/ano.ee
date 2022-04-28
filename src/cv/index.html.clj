@@ -81,7 +81,7 @@
     [:h2 "Contact information &amp; Links"]
     [:p "You can get in touch via e-mail at " [:a {:href "mailto:ano@ano.ee"} "ano@ano.ee"] "."]
     [:ul
-     [:li [:a {:href ""} "LinkedIn"]]
+     [:li [:a {:href "https://www.linkedin.com/in/asko-nomm/"} "LinkedIn"]]
      [:li [:a {:href "https://github.com/askonomm"} "GitHub"]]]]) 
      
         
