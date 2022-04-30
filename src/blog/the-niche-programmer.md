@@ -11,7 +11,7 @@ Nevertheless, I learned it and then wrote Clojure for almost 3 years at that com
 
 All was well until one day the company I worked at announced that they were moving away from Clojure to TypeScript, saying that it was too hard to find Clojure developers. I remember thinking that it must be a dying language then that nobody used, which sucked for me because I happened to like Clojure. Oh well, back to the mainstream then, I thought.
 
-A few months later I wanted a new challenge and quit that gig. Whilst doing job searching, I discovered something interesting. I discovered that while there are, of course, a ton of mainstream dev jobs out there, most of those wanted you to work in an office, and while there were much, much fewer Clojure jobs out there, they were all remote. Best of all, the salary was more than double that of the mainstream stuff.
+A few months later I wanted a new challenge and quit that gig. Whilst doing job searching, I discovered something interesting. I discovered that while there are, of course, a ton of mainstream dev jobs out there, most of those wanted you to work in an office, and while there were much, much fewer Clojure jobs out there, they were all remote. Best of all, the salary was more than double that of the mainstream stuff. Turns out the company I worked for just didn't have the budget for Clojure developers.
 
 So I joined the Clojure Slack community and kept an eye on Clojure job boards, and another interesting thing I found was that instead of the 100+ competitors for a job that I had gotten used to doing mainstream stuff, for Clojure, there were maybe 10. This made it so that the vast majority of the CVs I sent resulted in an interview, which was awesome.
 
