@@ -19,4 +19,4 @@ And while doing the interviews I discovered that because of the low number of ap
 
 This was an amazing revelation to me because I had gotten used to the interview process being something similar to a prostitution ring where nobody cares about my open-source projects and most of the time _doesn't even actually read my CV_. 
 
-Anyway, this is all to say that being a niche programmer is not bad at all. Pay is great, competition is low and the interview processes for the most part very humane. If Clojure ever makes it mainstream, I'll find a new niche language to specialize in.
+Anyway, this is all to say that being a niche programmer is not bad at all. Pay is great, competition is low and the interview processes for the most part very humane. If Clojure ever makes it mainstream, I'll find a new niche language to specialize in. And maybe you shouldn't be too afraid to try a niche language as well, if you've ever thought about it. Just because something has more jobs does not necessarily mean that you'll have an easier time getting a job.
