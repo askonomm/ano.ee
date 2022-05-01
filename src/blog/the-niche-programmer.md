@@ -22,4 +22,6 @@ This was an amazing revelation to me because I had gotten used to the interview 
 
 Anyway, this is all to say that being a niche programmer is not bad at all. Pay is great, competition is low and the interview processes for the most part very humane. If Clojure ever makes it mainstream, I'll find a new niche language to specialize in. And maybe you shouldn't be too afraid to try a niche language as well, if you've ever thought about it. Just because something has more jobs does not necessarily mean that you'll have an easier time getting a job.
 
+---
+
 **Update**: I want to clarify that not all niches yield similar results. Some languages have virtually no jobs available at all (perhaps because they are very new, Clojure is over 10 years old now), so please make sure to do market research before comitting to a niche. 
