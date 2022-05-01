@@ -1,5 +1,6 @@
 ---
 title: Correcting Markdown: Newlines
+description: If you don't want to make your parsers too complex, then correct the input before passing it to the parsers by using correctors.
 date: 2022-04-25
 ---
 

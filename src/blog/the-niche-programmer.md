@@ -1,5 +1,6 @@
 ---
 title: The Niche Programmer
+description: Sometimes the road less traveled is the best road.
 date: 2022-05-01
 ---
 
