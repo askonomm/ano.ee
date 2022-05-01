@@ -18,6 +18,8 @@ So I joined the Clojure Slack community and kept an eye on Clojure job boards, a
 
 And while doing the interviews I discovered that because of the low number of applicants, leetcode is fairly rare. Most of the interviews I've been a part of have focused mostly on questions around tool use, clean code practices, and asking me what I built in my previous jobs. And unlike mainstream language companies, they check my GitHub projects and for the most part never even give me a technical test job.
 
-This was an amazing revelation to me because I had gotten used to the interview process being something similar to a prostitution ring where nobody cares about my open-source projects and most of the time _doesn't even actually read my CV_. 
+This was an amazing revelation to me because I had gotten used to the interview process being something similar to a prostitution ring where nobody cares about my open-source projects and most of the time nobody even _actually read my CV_. 
 
 Anyway, this is all to say that being a niche programmer is not bad at all. Pay is great, competition is low and the interview processes for the most part very humane. If Clojure ever makes it mainstream, I'll find a new niche language to specialize in. And maybe you shouldn't be too afraid to try a niche language as well, if you've ever thought about it. Just because something has more jobs does not necessarily mean that you'll have an easier time getting a job.
+
+**Update**: I want to clarify that not all niches yield similar results. Some languages have virtually no jobs available at all (perhaps because they are very new, Clojure is over 10 years old now), so please make sure to do market research before comitting to a niche. 
