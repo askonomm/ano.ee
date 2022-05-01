@@ -1,6 +1,7 @@
 (declare post)
 (declare load-partial)
 (declare document)
+(declare format-date)
 
 
 (defn render-post
@@ -16,7 +17,8 @@
 
 
 (document
-  (load-partial "head" {'title (:title post)})
+  (load-partial "head" {'title (:title post)
+                        'description (:description post)})
   (load-partial "header")
   (render-post)
   (load-partial "footer"))
