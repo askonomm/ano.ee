@@ -88,7 +88,8 @@
        
 
 (document
-  (load-partial "head" {'title "Curriculum Vitae - Asko Nõmm"})
+  (load-partial "head" {'title "Curriculum Vitae - Asko Nõmm"
+                        'description "Software Engineer specializing in Clojure / ClojureScript."})
   (load-partial "header")
   (render-content))  
 

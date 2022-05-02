@@ -39,7 +39,8 @@
 
 ; Render page.
 (document
-  (load-partial "head" {'title "Asko Nõmm - Clojure / ClojureScript developer"})
+  (load-partial "head" {'title "Asko Nõmm - Clojure / ClojureScript developer"
+                        'description "Thoughts on Clojure, ClojureScript and ever-changing world of software development."})
   (load-partial "header")
   (render-posts)
   (load-partial "footer"))
