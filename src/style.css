@@ -499,6 +499,19 @@ a.btn {
     }
 }
 
+.content:not(.archive) .post-title.external-link a {
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.content:not(.archive) .post-title.external-link a:after {
+    display: inline-block;
+    font-size: 20px;
+    content: '\2192';
+    margin-left: 5px;
+}
+
 .content:not(.archive) .post-title a:hover {
     background: #eee;
 }
@@ -512,7 +525,7 @@ a.btn {
 .content:not(.archive) .post-meta {
     font-size: 12px !important;
     color: #999;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .content:not(.archive) .post-meta a,

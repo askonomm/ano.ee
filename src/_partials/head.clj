@@ -5,7 +5,7 @@
 [:head
  [:meta {:charset "utf-8"}]
  [:meta {:name "viewport" :content "width=device-width"}]
- (when description
+ (when (string? description)
    [:meta {:name "description"
            :content description}])
  [:title title]

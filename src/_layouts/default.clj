@@ -10,7 +10,10 @@
   [:div.content
    [:div.post
     [:h2.post-title
-     [:a {:href (str "/" (:slug post))} (:title post)]]
+     {:class (when (:link post) "external-link")}
+     [:a {:href (if (:link post)
+                  (:link post)
+                  (str "/" (:slug post)))} (:title post)]]
     (when (:date post)
       [:div.post-meta
        [:a {:href (str "/" (:slug post))} (format-date (:date post) "MMM dd, YYYY")]])
