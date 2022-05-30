@@ -12,13 +12,15 @@
     [:h2.post-title
      [:a {:href (str "/" (:slug post))} (:title post)]]
     (when (:date post)
-      [:div.post-meta (format-date (:date post) "MMM dd, YYYY")])
+      [:div.post-meta
+       [:a {:href (str "/" (:slug post))} (format-date (:date post) "MMM dd, YYYY")]])
     [:div.post-entry (:entry post)]]])
 
 
 (document
-  (load-partial "head" {'title (:title post)
-                        'description (:description post)})
-  (load-partial "header")
-  (render-post)
+  [:div.container
+   (load-partial "head" {'title (:title post)
+                         'description (:description post)})
+   (load-partial "header")
+   (render-post)]
   (load-partial "footer"))

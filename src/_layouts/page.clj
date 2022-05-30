@@ -9,12 +9,14 @@
   [:div.content
    [:div.page
     [:h2.post-title
-     [:a {:href (:slug post)} (:title post)]]
+     [:a {:href (str "/" (:slug post))} (:title post)]]
     [:div.post-entry (:entry post)]]])
 
 
 (document
-  (load-partial "head" {'title (:title post)})
-  (load-partial "header")
-  (render-page)
+  [:div.container
+   (load-partial "head" {'title (:title post)
+                         'description (:description post)})
+   (load-partial "header")
+   (render-page)]
   (load-partial "footer"))

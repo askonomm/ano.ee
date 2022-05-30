@@ -1,3 +1,4 @@
+(require '[clojure.string :as string])
 (declare load-partial)
 (declare document)
 (declare content)
@@ -55,41 +56,46 @@
 (defn render-content
   []
   [:div.content.cv
-    [:h2.main-title "Curriculum Vitae"]
-    [:h2 "About"]
-    [:p "I'm a Software Engineer with about 11 years of work experience specializing in Clojure / ClojureScript."]
-    [:h2 "Work experience"]
-    (render-gigs)
-    [:h2 "Languages"]
-    (map-indexed 
-      (fn [index item]
-        [:span
-          [:span.item item]
-          (if-not (= index (- (count languages) 1))
-            ", "
-            ".")])
-      languages)
-    [:h2 "Tools"]
-    (map-indexed 
-      (fn [index item]
-        [:span
-          [:span.item item]
-          (if-not (= index (- (count tools) 1))
-            ", "
-            ".")])
-      tools)
-    [:h2 "Contact information &amp; Links"]
-    [:p "You can get in touch via e-mail at " [:a {:href "mailto:ano@ano.ee"} "ano@ano.ee"] "."]
-    [:ul
-     [:li [:a {:href "https://www.linkedin.com/in/asko-nomm/"} "LinkedIn"]]
-     [:li [:a {:href "https://github.com/askonomm"} "GitHub"]]]]) 
+   [:h2.main-title "Curriculum Vitae"]
+   [:h2 "About"]
+   (let [start-year (Integer/parseInt (first (string/split (:from (last gigs)) #"-")))
+         date ^java.util.Calendar (java.util.GregorianCalendar.)
+         year (.get date (.-YEAR java.util.Calendar))
+         years-of-experience (- year start-year)]
+     [:p (str "I'm a Software Engineer with " years-of-experience " years of work experience specializing in Clojure / ClojureScript.")])
+   [:h2 "Work experience"]
+   (render-gigs)
+   [:h2 "Languages"]
+   (map-indexed
+     (fn [index item]
+       [:span
+        [:span.item item]
+        (if-not (= index (- (count languages) 1))
+          ", "
+          ".")])
+     languages)
+   [:h2 "Tools"]
+   (map-indexed
+     (fn [index item]
+       [:span
+        [:span.item item]
+        (if-not (= index (- (count tools) 1))
+          ", "
+          ".")])
+     tools)
+   [:h2 "Contact information &amp; Links"]
+   [:p "You can get in touch via e-mail at " [:a {:href "mailto:ano@ano.ee"} "ano@ano.ee"] "."]
+   [:ul
+    [:li [:a {:href "https://www.linkedin.com/in/asko-nomm/"} "LinkedIn"]]
+    [:li [:a {:href "https://github.com/askonomm"} "GitHub"]]]])
      
         
        
 
 (document
-  (load-partial "head" {'title "Curriculum Vitae - Asko Nõmm"
-                        'description "Software Engineer specializing in Clojure / ClojureScript."})
-  (load-partial "header")
-  (render-content))  
+  [:div.container
+   (load-partial "head" {'title "Curriculum Vitae - Asko Nõmm"
+                         'description "Software Engineer specializing in Clojure / ClojureScript."})
+   (load-partial "header")
+   (render-content)])
 

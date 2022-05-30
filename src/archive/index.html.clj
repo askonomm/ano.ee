@@ -15,32 +15,32 @@
 
 
 ; Get all blog posts grouped by year.
-(def posts
+(def archive
   (content {:from     "blog"
             :sort-by  :date
-            :order    :desc}))
+            :order    :desc
+            :group-by #(group-content-by-year (:date %))}))
 
 
 (defn render-posts
   "Renders blog posts."
   []
-  [:div.content.posts
-   [:div
-    (for [post posts]
-      [:div.post
-       [:h2.post-title
-        [:a {:href (str "/" (:slug post))} (:title post)]]
-       [:div.post-meta
-        [:a {:href (str "/" (:slug post))} (format-date (:date post) "MMM dd, YYYY")]]
-       [:div.post-entry (:entry post)]])]
-   [:div.read-more
-    [:a {:href "/archive"} "There's more to read in the archive."]]])
+  [:div.content.archive
+   (for [year archive]
+     [:div.year
+      [:h3 (key year)]
+      [:div.posts
+       (for [post (val year)]
+         [:div.post
+          [:h2.post-title
+           [:a {:href (str "/" (:slug post))} (:title post)]]
+          [:div.post-meta (format-date (:date post) "MMM dd")]])]])])
 
 
 ; Render page.
 (document
   [:div.container
-   (load-partial "head" {'title "Asko Nõmm - Clojure / ClojureScript developer"
+   (load-partial "head" {'title "Archive - Asko Nõmm"
                          'description "Thoughts on Clojure, ClojureScript and ever-changing world of software development."})
    (load-partial "header")
    (render-posts)]
