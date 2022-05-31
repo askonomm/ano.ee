@@ -195,12 +195,14 @@ body {
 
 .container {
     width: 525px;
+    min-height: calc(100vh - 250px);
     margin: 100px auto;
 }
 
 @media all and (max-width: 750px) {
     .container {
         width: calc(100% - 50px);
+	min-height: calc(100vh - 150px);
         margin: 25px;
     }
 }
@@ -619,10 +621,11 @@ ul li:last-child {
 
 .content.posts .read-more a {
     display: inline-block;
+    font-size: 12px !important;
     font-weight: 800;
     border: 2px solid var(--accent);
     border-radius: 25px;
-    padding: 10px 25px;
+    padding: 6px 18px;
 }
 
 @media all and (max-width: 700px) {
@@ -778,6 +781,7 @@ ul li:last-child {
 }
 
 .footer .container {
+  min-height: 0;
     margin-top: 0;
     margin-bottom: 0;
 }

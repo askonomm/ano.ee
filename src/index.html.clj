@@ -16,9 +16,10 @@
 
 ; Get all blog posts grouped by year.
 (def posts
-  (content {:from     "blog"
-            :sort-by  :date
-            :order    :desc}))
+  (->> (content {:from     "blog"
+                 :sort-by  :date
+                 :order    :desc})
+       (take 10)))
 
 
 (defn render-posts
